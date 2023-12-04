@@ -20,44 +20,44 @@ class HomeState extends State<Home> {
         children: [ // ListTile: cada item da lista
           ListTile(
             leading: const Icon(Icons.task),
-            title: Text("Lista de tarefas"),
-            trailing: Icon(Icons.arrow_forward_ios),
+            title: const Text("Lista de tarefas"),
+            trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
               Navigator.push(context, 
                 MaterialPageRoute(
-                  builder: (context) => MainTask()
+                  builder: (context) => const MainTask()
                 )
               );
             }
           ),
           ListTile(
-            leading: Icon(Icons.people_alt),
-            title: Text("Lista de usuários"),
-            subtitle: Text("Pessoas cadastradas"),
-            trailing: Icon(Icons.arrow_forward_ios),
+            leading: const Icon(Icons.people_alt),
+            title: const Text("Lista de usuários"),
+            subtitle: const Text("Pessoas cadastradas"),
+            trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
               print("Você tocou na lista");
               // Navegando para uma nova tela
               Navigator.push(context, 
                 MaterialPageRoute(
-                  builder: (context) => Usuarios()
+                  builder: (context) => const Usuarios()
                 )
               );
             }
           ),
           ListTile(
-            leading: Icon(Icons.photo),
-            title: Text("Álbum de fotos"),
-            subtitle: Text("Visualização de imagens"),
-            trailing: Icon(Icons.arrow_forward_ios),
+            leading: const Icon(Icons.photo),
+            title: const Text("Álbum de fotos"),
+            subtitle: const Text("Visualização de imagens"),
+            trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
               print("Você tocou na lista");
             }
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text("Configurações"),
-            trailing: Icon(Icons.arrow_forward_ios),
+            leading: const Icon(Icons.settings),
+            title: const Text("Configurações"),
+            trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
               print("Você tocou na lista");
             }

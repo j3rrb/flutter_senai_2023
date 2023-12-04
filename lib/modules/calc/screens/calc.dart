@@ -13,6 +13,7 @@ class CalcState extends State<Calc> {
   TextEditingController control1 = TextEditingController();
   TextEditingController control2 = TextEditingController();
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(

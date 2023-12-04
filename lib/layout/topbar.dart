@@ -4,6 +4,8 @@ import '../modules/calc/screens/calc.dart';
 import '../modules/home/screens/home.dart';
 
 class TopBar extends StatelessWidget {
+  const TopBar({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -11,7 +13,7 @@ class TopBar extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text("Top Navigation"),
-          bottom: TabBar(
+          bottom: const TabBar(
             tabs: [
               Tab(icon: Icon(Icons.home)),
               Tab(icon: Icon(Icons.calculate)),
@@ -21,9 +23,9 @@ class TopBar extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            Home(),
-            Calc(),
-            Container(child: Text("Em Construção"))
+            const Home(),
+            const Calc(),
+            Container(child: const Text("Em Construção"))
           ],
         )
       )

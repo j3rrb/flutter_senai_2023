@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../models/usuario_model.dart';
 
 class Usuarios extends StatefulWidget {
+  const Usuarios({super.key});
+
   @override
   State<Usuarios> createState() {
     return UsuariosState();
@@ -11,7 +13,7 @@ class Usuarios extends StatefulWidget {
 
 class UsuariosState extends State<Usuarios> {
   /// Lista de objetos da classe Usuario
-  List<Usuario> _lista = [];
+  final List<Usuario> _lista = [];
 
   @override
   void initState() {

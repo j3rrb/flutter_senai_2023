@@ -22,7 +22,7 @@ class SplashState extends State<Splash> {
           context, 
           MaterialPageRoute(
             //builder: (context) => TopBar()
-            builder: (context) => BottomBar()
+            builder: (context) => const BottomBar()
           )
         );
       }
